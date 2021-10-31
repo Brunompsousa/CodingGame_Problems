@@ -1,0 +1,28 @@
+/*
+* Break a int number in single values 
+* (Ex: 123 -> 1,2,3)
+*/
+    public static void SepararValores() {
+        int num = 35432135;
+        int Snum = 0;
+
+        //Convert to string
+        String nums = Integer.toString(num);
+
+        //Foreach to transform the array in characters
+        for (char ch : nums.toCharArray()) {
+            System.out.print(ch+" ");
+        }
+
+        System.out.println("\n----------");
+
+        //Same example but with long instead of int
+        long Lnum = 5543654;
+        int SLnum = 0;
+        String Lnums = Long.toString(Lnum);
+
+        for (char ch : Lnums.toCharArray()) {
+            System.out.print(ch+" ");
+        }
+
+    }

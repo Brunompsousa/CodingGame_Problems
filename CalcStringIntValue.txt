@@ -1,0 +1,19 @@
+/*
+* Break the string in characters and calc the value for each letter (Ex: a,b,c -> 1,2,3)
+* Sum all the letter values and print 
+* Only using the values of capital letters for all because the problem asked.
+*/
+    public static void LettersValue() {
+
+        String s = "Math";
+        int r = 0;
+
+        //Transforme the string in uppercase
+        s = s.toUpperCase();
+
+        for(char ch : s.toCharArray()){
+            //add a value to a char for get the value of uppercase(64) and lowercase (96)
+            r+=Integer.parseInt(String.valueOf(ch-64));
+            System.out.println(r);
+        }
+    }
